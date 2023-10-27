@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: none; */
+}
+
+/* BODY */
+
+body {
+  background-color: white;
+}
+/* NAVIGATION MENU */
+
+.navigation {
+  width: 100%;
+  margin: 0 auto;
+  background-color: aqua;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: rgba(219, 5, 8, 0.939);
+  font-weight: 800;
+  text-shadow: rgba(89, 79, 79, 0.641) 2px 2px 2px;
+  display: flex;
+  margin: 0 auto;
+}
+/* HOVER PRO MENU */
+a:hover {
+  background-color: rgb(252, 252, 252);
+  transition: all 0.2s ease 0s;
+}
+
+#icon-menu {
+  display: none;
+}
+/* QUERY PRO MOBIL (NAVIGATION MENU) */
+
+@media (max-width: 568px) {
+  a {
+    display: none;
+    flex-direction: column;
+  }
+  #icon-menu {
+    color: rgb(136, 14, 136);
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* BANNER-SECTION */
+
+.banner-section {
+  height: 400px;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: blueviolet;
+  text-shadow: black 10px 15px 10px;
+  background: url(IMAGE/IMG\ K\ TEXTU.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+  border: 3px solid red;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+}
+h2 span {
+  color: pink;
+}
+
+/* TEXT+OBRAZEK */
+span {
+  color: red;
+}
+
+/* BANNER-SECTION */
+
+@media (max-width: 575px) {
+  .banner-section {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+/* IMG + TEXT (H5) */
+
+.hero-section {
+  width: 60%;
+  background: beige;
+  margin-right: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 150px 50px;
+}
+
+h5 {
+  color: rgb(6, 8, 8);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  text-shadow: lightblue 15px 30px 15px;
+  display: flex;
+  margin: 1rem;
+}
+img {
+  width: 40%;
+}
+
+/* HERO - SECTION */
+
+@media (max-width: 530px) {
+  .hero-section {
+    width: 100%;
+    display: flex;
+  }
+  img {
+    width: 160px;
+  }
+}
+
+/* INFO-WRAPPER-ICONS/IKONKY+TEXT */
+
+.wrapper-info-section {
+  border: 2px solid red;
+}
